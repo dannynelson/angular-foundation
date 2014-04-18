@@ -1,0 +1,7 @@
+<script type="text/ng-template" id="dashboard.html">
+  <tabset style="padding-top:10px" vertical="false">
+    <tab ng-repeat="tab in tabs" heading="{{tab.title}}" ui-sref="{{tab.state}}">
+      <ui-view></ui-view>
+    </tab>
+  </tabset>
+</script>
